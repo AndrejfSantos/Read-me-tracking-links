@@ -2,9 +2,14 @@
 
 Implementing a standard so Trackers can read the reason why a tracking link isnt redirecting correctly.
 
-All you need to do is ad a 'readme' parameter with the reason of the block. 
+All you need to do is ad a 'readme' parameter with the reason of why the link isnt redirrecting correctly.
 
-Example:
-https://readme.offertest.net?redirectUrl=http%3A%2F%2Fplay.google.com%2Fstore&readme=This%20Offer%20Is%20Whitelisted
+For Example if your offer has a whitelist and send the offer to the store directly instead of a tracker when the source is not part of the whitelist like this:
+https://play.google.com/store/apps/details?id=jp.co.ncjapan.lineagem&hl=ja
 
-This link will redirect to http://play.google.com%2Fstore but the user will also know that the reason for this redirect is that "This Offer Is Whitelisted" , tools like OfferTest will be able to display this information.
+you could add the reason when sending to the store, like this:
+https://play.google.com/store/apps/details?id=jp.co.ncjapan.lineagem&hl=ja&readme=whitelist
+
+That way the user that is testing the offer will also know that the reason for this redirect is the "whitelisted" , tools like OfferTest will be able to display this information and prevent the publishers you want to stop sending traffic because they think the offer is broken.
+
+Other possible examples include "Capped offer", "blocked subid" or "wrong target".
