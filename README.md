@@ -12,6 +12,7 @@ you could add the reason when sending to the store, like this:
 
 https://play.google.com/store/apps/details?id=jp.co.ncjapan.lineagem&hl=ja&readme=whitelist
 
-That way the user that is testing the offer will also know that the reason for this redirect is the "whitelisted" , tools like OfferTest will be able to display this information and prevent the publishers you want to stop sending traffic because they think the offer is broken.
+That way the user that is testing the offer will also know that the reason for this redirect is the "whitelisted" , tools like OfferTest will be able to display this information and notify the user.
+This will make the publishers that you want aware and will prevent them from stop sending traffic because they think the offer is broken.
 
 Other possible examples include "Capped offer", "blocked subid" or "wrong target".
